@@ -1,0 +1,54 @@
+body {
+  background-color: #282a36;
+  color: #f8f8f2;
+  text-align: center;
+}
+
+.flags-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.flag {
+  list-style: none;
+  padding: 1rem;
+}
+
+.continue-btn {
+  /** Reset */
+  border: none;
+  margin: 0;
+  width: auto;
+  overflow: visible;
+
+  padding: 2;
+  border-radius: .25rem;
+  font-size: 1.5rem;
+  color: #282a36;
+}
+
+.continue-btn:enabled {
+  background-color: #50fa7b;
+}
+
+.continue-btn:disabled {
+  color: #44475a;
+}
+
+.answer {
+  font-size: 1.25rem;
+}
+
+.answer.right {
+  color:  #50fa7b;
+}
+
+.answer.wrong {
+  color: #ff5555;
+}
+
+.answer.wrong::before {
+  content: "Errado!"
+}
